@@ -1,6 +1,6 @@
 import { Meta, Story } from "@storybook/angular";
 import { Button2Component } from "./button2.component";
-
+import { fireEvent } from "@storybook/testing-library";
 
 // Default, same for every story of this component
 export default {

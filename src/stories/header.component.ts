@@ -1,8 +1,12 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import type { User } from './User';
+import Button from './button.component'
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'storybook-header',
+  standalone: true,
+  imports: [Button, CommonModule],
   template: `<header>
     <div class="storybook-header">
       <div>

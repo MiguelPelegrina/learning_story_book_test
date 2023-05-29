@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import type { User } from './User';
-
+import Header from './header.component'
 @Component({
   selector: 'storybook-page',
+  standalone: true,
+  imports: [Header],
   template: `<article>
     <storybook-header
       [user]="user"
